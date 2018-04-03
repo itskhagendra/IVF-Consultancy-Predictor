@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semen Quality Analyzer</title>
+    <meta name="author" content="Khagendra Kumar">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Semen Quality analyzer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Demo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Docs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron jumbo mx-auto">
+    <h1 class="semen display-1">Semen Quality Analysis</h1>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <h2 class="display-4">About The Project</h2>
+        <p>
+            Lifestyle diseases share risk factors similar to prolonged exposure to three modifiable lifestyle behaviours
+            -- smoking, unhealthy diet, and physical inactivity -- and result in the development of chronic diseases,
+            specifically heart disease, stroke, diabetes, obesity, metabolic syndrome, chronic obstructive pulmonary
+            disease, and some types of cancer.<br>
+            These illnesses used to be considered the diseases of industrialized countries, so-called "Western diseases"
+            or "diseases of affluence"; however, internationally they are known as non-communicable and chronic
+            diseases, part of the degenerative diseases group. Chronic disease can result in loss of independence, years
+            of disability, or death, and impose a considerable economic burden on health services.
+        </p>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <h3>Season</h3>
+                <input type="radio" name="season" value="-1"> Winter<br>
+                <input type="radio" name="Season" value="-0.33"> spring<br>
+                <input type="radio" name="season" value="0.33"> Summer<br>
+                <input type="radio" name="season" value="1"> Fall<br>
+            </div>
+            <div class="form-grop">
+                <h3>Age</h3>
+                <input type="number" name="Age" min="18" max="36" placeholder="min:18-Max:36">
+            </div>
+            <div class="form-group">
+                <h3>Childish Disease</h3>
+                <p>Eg:chicken pox, measles, mumps, polio</p>
+                <input type="radio" name="childish" value="0"> Yes<br>
+                <input type="radio" name="childish" value="1"> No<br>
+            </div>
+            <div class="form-group">
+                <h3>Accident or serious trauma</h3><br>
+                <input type="radio" name="Accident" value="0"> Yes<br>
+                <input type="radio" name="Accident" value="1"> No<br>
+            </div>
+            <div class="form-group">
+                <h3> Surgical intervention</h3>
+                <input type="radio" name="Surgery" value="0"> Yes<br>
+                <input type="radio" name="Surgery" value="1"> No<br>
+            </div>
+            <div class="form-group">
+                <h3>High fevers in the last year</h3>
+                <input type="radio" name="fever" value="-1"> Less than three months ago<br>
+                <input type="radio" name="fever" value="0"> More than three months ago<br>
+                <input type="radio" name="fever" value="1"> No<br>
+            </div>
+            <div class="form-group">
+                <h3>Alchol consumption </h3>
+                <input type="radio" name="alcohol" value="0.2"> Several times a day<br>
+                <input type="radio" name="alcohol" value="0.4"> Every day<br>
+                <input type="radio" name="alcohol" value="0.6"> Several times a week<br>
+                <input type="radio" name="alcohol" value="0.8"> Once a week<br>
+                <input type="radio" name="alcohol" value="1.0"> Never<br>
+            </div>
+            <div class="form-group">
+                <h3>Smoking habit</h3>
+                <input type="radio" name="Smoking" value="-1"> Never<br>
+                <input type="radio" name="Smoking" value="0"> Occasional<br>
+                <input type="radio" name="Smoking" value="1"> Daily<br>
+            </div>
+            <div class="form-group">
+                <h3>Number of hours spent sitting per day</h3>
+                <input type="number" name="idle" min="0" max="16"><br>
+            </div>
+            <button type="submit" class="btn btn-primary">Check Me</button>
+        </form>
+    </div>
+</div>
+<div style="backgroud-color:black;color:white" class="container-fluid">
+    <div style="text-align:center" class="container">
+        <p>Desiged By Khagendra Kumar</p>
+    </div>
+</div>
+</body>
+</html>

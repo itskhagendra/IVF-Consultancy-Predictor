@@ -1,0 +1,21 @@
+#Data Processing
+from sklearn.preprocessing import LabelEncoder
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+classifier=SVC()
+encoder=LabelEncoder()
+y_test,y_train=array(y_train),array(y_test)
+y_train=ravel(y_train)
+y_test=ravel(y_test)
+y_test,y_train=encoder.fit_transform(y_train),encoder.fit_transform(y_test)
+
+#AI Traoining
+classifier.fit(x_train,y_train)
+pred=classifier.predict(x_test)
+acc=accuracy_score(pred,y_test)
+print(acc)
+
+#Production Ready
+import pickle
+model=pickle.dump(classifier,open('model1.h5','wb'))
+production=pickle.load(open('model1.h5','rb'))
